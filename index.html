@@ -3,6 +3,7 @@
 
 <head>
     <meta property="og:title" content="The Discord Automod Bypasser" />
+    <meta property="og:description" content="The best working automod bypasser" />
     <meta property="og:image" content="https://cdn.discordapp.com/attachments/818961695825199134/1155226959262007377/bypass.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,49 +20,26 @@
             overflow: auto;
             background-color: rgba(0, 0, 0, 0.4);
         }
-
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 50%;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        body {
-            background-image: url(https://cdn.discordapp.com/attachments/818961695825199134/1155216664518983741/geometry-abstract-cyberspace-4k_1546278204.png);
+        #backgroundVideo {
+            position: fixed;
+            top: 0;
+             left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
         }
 
         .razor {
-            background-color: green;
-            color: black;
-            border: 20px solid yellow;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
             margin: 50px;
             padding: 10px;
             text-align: center;
-        }
-
-        .wos {
-            background-color: white;
-            color: black;
-            border: 5px solid black;
-            margin: 50px;
-            padding: 10px;
-            text-align: side;
         }
 
         .text {
@@ -69,51 +47,23 @@
             text-align: center;
         }
     </style>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@200&display=swap');
-    </style>
 </head>
-
-<body onload="openModal()">
-    <!-- Modal dialog content -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <h2>Welcome</h2>
-            <p>Thank you for visiting this site. Please don't use this bypasser to say bad words on discord servers that doesn't allow those words. THIS SITE DOES NOT LOG ANYTHING.</p>
-            <p>To enter, please check "I agree" and click on "Enter"</p>
-            <input type="checkbox" id="agreeCheckbox"> I agree<br>
-            <button1 type="button" onclick="enterSite()">Enter</button1>
-        </div>
-    </div>
-
-    <style>
-.text {
-color: white;
-text-align: center;
-</style>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@200&display=swap');
-</style>
 <body>
-<div class="razor">
-<h1 style="font-family: 'Inter', sans-serif;">zuot's hardcore site</h1>
-<p style="font-family: 'Inter', sans-serif;">so hot</p>
-</div>
  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="razor">
-    <h1 style="font-family: 'Inter', sans-serif;">DISCORD AUTOMOD BYPASSER</h1>
+    <h1 style="font-family: 'Arial', sans-serif;">DISCORD AUTOMOD BYPASSER</h1>
     <style>
         textarea, div.box {
             width: 45%;
             height: 100px;
             padding: 10px;
             margin: 10px;
-            border: 1px solid #ccc;
+            border: 3px solid #c2c2c2;
             display: inline-block;
             vertical-align: top;
             position: relative;
+            border-radius: 15px;
         }
 
         textarea {
@@ -121,25 +71,30 @@ text-align: center;
         }
 
         div.box {
-            background-color: #f9f9f9;
+            background-color: #ffffff;
             white-space: nowrap;
             overflow-x: auto;
+            border-radius: 15px;
         }
 
         button {
+            background-color: #b3cde0;
             position: absolute;
-            bottom: 10px;
-            right: 10px;
+            border-radius: 5px;
+            bottom: 5px;
+            right: 5px;
         }
 
         div.outputText {
             max-height: 70px;
             overflow-y: auto;
         }
-        onclick="alert('Hello world!')";
     </style>
 </head>
 <body>
+    <video autoplay loop muted playsinline id="backgroundVideo">
+        <source src="/images/y2mate.com - Timelapse HD  Sunrise  Sunset France_1080p.mp4" type="video/mp4">
+    </video>
     <textarea id="inputBox" onkeyup="showText()"></textarea>
     <div class="box">
         <div id="outputText"></div>
@@ -174,30 +129,4 @@ text-align: center;
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://cdn.discordapp.com/attachments/818961695825199134/1154178890026197032/iphonead.png"</a>
 <a href="https://www.youtube.com/watch?v=_S7WEVLbQ-Y"><img src="https://cdn.discordapp.com/attachments/1104925336501768243/1155250271501418496/bypassAD1.png"</a>
 <a>
-
-
-    <script>
-        var modal = document.getElementById('myModal');
-
-        function openModal() {
-            modal.style.display = "block";
-        }
-
-        function closeModal() {
-            modal.style.display = "none";
-        }
-
-        function enterSite() {
-            var isChecked = document.getElementById('agreeCheckbox').checked;
-            if (isChecked) {
-                closeModal();
-            } else {
-                alert('Please agree to the terms before entering the site.');
-                
-            }
-        }
-    </script>
-</body>
-
 </html>
-
